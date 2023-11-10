@@ -6,22 +6,16 @@ body {
 article a {
   color: inherit;
 }
+article * {
+  margin: 0 auto;
+}
+
 article h1,
 article h2,
 article h3,
 article h4,
-article p,
-article ul,
-article ol,
-article blockquote {
-  width: 700px;
-  margin: 0 auto;
-}
-article h1,
-article h2,
-article h3,
-article h4 {
-  font-family: 'PT Sans Caption', sans-serif;
+article h5 {
+  font-family: 'PT Sans', sans-serif;
   font-weight: bold;
 }
 article h1 {
@@ -69,6 +63,12 @@ article h4 + article p,
 article h4 + article blockquote {
   margin-top: 5px;
 }
+article h5 {
+  margin-bottom: 40px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: normal;
+}
 article p,
 article blockquote,
 article li {
@@ -80,7 +80,7 @@ article blockquote {
   font-style: italic;
   position: relative;
 }
-article blockquote::before {
+article .right_quote::before {
   content: '';
   width: 3px;
   height: 100%;
@@ -89,6 +89,19 @@ article blockquote::before {
   top: 0;
   left: -17px;
 }
+article .left_quote {
+  text-align: right;
+}
+article .left_quote::after {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  right: -17px;
+}
+
 article img {
   display: block;
   width: 1020px;
@@ -113,7 +126,7 @@ article p:last-child {
 }
 article ul {
   list-style-type: disc;
-  padding-left: 32px;
+  padding-left: 45px;
 }
 article ol {
   list-style-type: decimal;
