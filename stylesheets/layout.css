@@ -133,3 +133,30 @@ article ol {
   padding-left: 32px;
   color: black;
 }
+article div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 60px;
+  row-gap: 10px;
+}
+article div span {
+  font-size: 25px;
+  width: auto;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+article h2 ~ ul {
+  margin: 29px auto;
+}
+.a2a_kit {
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+
+article ul > p {
+  margin-left: -20px;
+  margin-top: 10px;
+}
