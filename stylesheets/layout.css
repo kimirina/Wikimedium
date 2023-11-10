@@ -3,19 +3,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'PT Sans', sans-serif;
 }
-article a {
+a {
   color: inherit;
 }
+* {
+  box-sizing: border-box;
+}
 article * {
+  width: 700px;
   margin: 0 auto;
 }
-
 article h1,
 article h2,
-article h3,
-article h4,
-article h5 {
-  font-family: 'PT Sans', sans-serif;
+article h3 {
+  font-family: 'PT Sans Caption', sans-serif;
   font-weight: bold;
 }
 article h1 {
@@ -23,14 +24,14 @@ article h1 {
   font-size: 38px;
   line-height: 45px;
 }
-article h1 + article p {
+article h1 + p {
   margin-top: 8px;
   font-family: 'PT Sans Caption', sans-serif;
   font-size: 22px;
   line-height: 32px;
   color: rgba(0, 0, 0, 0.4);
 }
-article h1 + article p + article p {
+article h1 + p + p {
   margin-top: 30px;
 }
 article h2 {
@@ -39,8 +40,8 @@ article h2 {
   line-height: 36px;
   color: rgba(0, 0, 0, 0.8);
 }
-article h2 + article p,
-article h2 + article blockquote {
+article h2 + p,
+article h2 + blockquote {
   margin-top: 7px;
 }
 article h3 {
@@ -49,25 +50,9 @@ article h3 {
   line-height: 34px;
   color: rgba(0, 0, 0, 0.8);
 }
-article h4 {
-  margin-top: 32px;
-  font-size: 24px;
-  line-height: 30px;
-  color: rgba(0, 0, 0, 0.8);
-}
-article h3 + article p,
-article h3 + article blockquote {
+article h3 + p,
+article h3 + blockquote {
   margin-top: 6px;
-}
-article h4 + article p,
-article h4 + article blockquote {
-  margin-top: 5px;
-}
-article h5 {
-  margin-bottom: 40px;
-  margin-top: 5px;
-  font-size: 20px;
-  font-weight: normal;
 }
 article p,
 article blockquote,
@@ -80,7 +65,7 @@ article blockquote {
   font-style: italic;
   position: relative;
 }
-article .right_quote::before {
+article blockquote::before {
   content: '';
   width: 3px;
   height: 100%;
@@ -89,74 +74,28 @@ article .right_quote::before {
   top: 0;
   left: -17px;
 }
-article .left_quote {
-  text-align: right;
-}
-article .left_quote::after {
-  content: '';
-  width: 3px;
-  height: 100%;
-  background: black;
-  position: absolute;
-  top: 0;
-  right: -17px;
-}
-
 article img {
   display: block;
   width: 1020px;
   margin: 79px auto 0;
 }
-article img + article h2 {
+article img + h2 {
   margin-top: 79px;
 }
-article img + article p,
-article img + article blockquote,
-article img + article ul {
+article img + p,
+article img + blockquote,
+article img + ul {
   margin-top: 77px;
 }
-article h2 + article img {
+article h2 + img {
   margin-top: 82px;
 }
-article h3 + article img {
+article h3 + img {
   margin-top: 81px;
-}
-article p:last-child {
-  margin-bottom: 80px;
 }
 article ul {
   list-style-type: disc;
-  padding-left: 45px;
 }
 article ol {
-  list-style-type: decimal;
-  padding-left: 32px;
-  color: black;
-}
-article div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  column-gap: 60px;
-  row-gap: 10px;
-}
-article div span {
-  font-size: 25px;
-  width: auto;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: bold;
-  margin: 0;
-}
-article h2 ~ ul {
-  margin: 29px auto;
-}
-.a2a_kit {
-  margin-bottom: 40px;
-  margin-top: 80px;
-}
-
-article ul > p {
-  margin-left: -20px;
-  margin-top: 10px;
+  list-style-type: upper-alpha;
 }

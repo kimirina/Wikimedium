@@ -20,15 +20,28 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 <link rel="icon" type="image/png" href="images/favicon.png" />
     <script src="javascripts/jquery-3.7.1.js" charset="utf-8"></script>
+    <style>
+      body {
+        background-color: #f9f9f9;
+      }
+      @media screen and (max-width: 767px) and (orientation: portrait){
+    body {
+        background-color: white;
+    } 
+  }
+    </style>
   </head>
   <body>
+    <!-- шапка сайта -->
     <nav class="menubar">
-      <img src="images/logo.svg" alt="Логотип сайта Викимедиум">
+      <img src="images/logo.svg" alt="логотип сайта викимедиум" />
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="about.html">О нас</a></li>
       </ul>
     </nav>
+
+    <!-- основное содержимое -->
     <main>
       <div class="index-item">
         <img src="images/narkomfin.jpg" alt="">

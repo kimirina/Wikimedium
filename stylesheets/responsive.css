@@ -1,126 +1,51 @@
-@media all and (max-width: 1020px) {
-    article img {
-      width: 100%;
-    }
-    section:nth-of-type(3) {
-      height: 650px;
-    }
+.sidebar {
+    min-height: 50vh;
   }
-  @media all and (min-device-width: 1440px) {
-    body {
-      width: 1440px;
-      margin: 0 auto;
-    }
-    article * {
-      width: 700px;
-    }
-    section h1,
-    section p {
-      width: 560px;
-      margin-left: 108px;
-    }
-  }
-  @media all and (max-width: 1440px) {
+  @media all and (max-width: 1340px) {
     .sidebar {
       display: none;
     }
-    section h1,
-    section p {
-      width: 560px;
-      margin-left: 108px;
+  }
+  @media all and (max-width: 1020px) {
+    article img {
+      width: 100%;
     }
   }
-  
-  @media all and (min-width: 1024px) and (max-width: 1440px) {
-    section h1,
-    section p {
-      width: calc(100% - 40px);
-      margin-left: 20px;
-    }
-    section p {
-      margin: 20px auto 0;
-    }
-    article * {
-      width: 700px;
-    }
-  }
-  
-  /* адаптив для планшета, вертикальный поворот */
   @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     article > * {
       width: calc(100% - 40px);
     }
-    section h1,
-    section p {
-      width: calc(100% - 40px);
-  
-      margin-left: 20px;
-    }
-    section p {
-      margin-top: 20px;
-    }
   }
-  /* адаптив для телефона */
-  @media all and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: portrait) {
+  
+  @media all and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     body {
       min-width: 320px;
     }
     article > * {
       width: calc(100% - 40px);
     }
-    .menubar img {
-      width: 140px;
-      padding-left: 20px;
-    }
-    section {
-      flex-direction: column;
-    }
-    section {
-      min-width: 320px;
-    }
-    section h1,
-    section p {
-      width: calc(100% - 40px);
-      margin: 67px auto 0;
-    }
-    section p {
-      margin: 20px auto 0;
-    }
-    section div {
-      width: 100%;
-    }
-    section img {
-      width: 100vw;
-      margin: 25px 0 0 0px;
-    }
-    section:nth-of-type(2) {
-      flex-direction: column-reverse;
-    }
-    section:nth-of-type(3) {
-      height: auto;
-    }
-    .buttons {
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-      gap: 20px;
-    }
-    .end_header,
-    .end_paragraph {
-      width: calc(100% - 40px);
-    }
   }
-  /* адаптив для планшета, горизонтальный поворот */
   @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .sidebar {
       display: none;
     }
-    section h1,
-    section p {
-      width: calc(100% - 40px);
-      margin-left: 20px;
+  }
+  
+  @media screen and (max-width: 1279px) {
+    .index-item {
+      width: 740px;
     }
-    section p {
-      margin-top: 20px;
+  }
+  @media screen and (max-device-width: 767px) and (orientation: portrait) {
+    body {
+      background-color: white;
+    }
+    .index-item {
+      width: 100vw;
+      box-shadow: none;
+      border: none;
+    }
+    .index-item img {
+      height: 100vw;
     }
   }
